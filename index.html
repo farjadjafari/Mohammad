@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=], initial-scale=1.0">
+  <title>Mini Shop</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header>
+    <h2> Mini Shop </h2>
+    <div class="cart ">🛒 <span id="count">0</span></div>
+  </header>
+
+  <section class="products ">
+    <div class="product">
+      <h3>Website Basic </h3>
+      <p class="price " data-price="99">$99</p>
+      <button onclick="addToCart('Website Basic', 99)">Add</button>
+    </div>
+
+    <div class="product">
+      <h3>Website Pro </h3>
+      <p class="price " data-price="199">$199</p>
+      <button onclick="addToCart('Website Pro' , 199)">Add</button>
+    </div>
+
+  </section>
+
+  <section class="cart-box ">
+    <h3>Cart </h3>
+    <ul id="cart-item "></ul>
+    <p>Total: $<span id="total">0</span> </p>
+    <button onclick="sendWhatsApp()">Order via WhatsApp</button>
+  </section>
+</body>
+<script src="js/script.js"></script>
+
+</html>
